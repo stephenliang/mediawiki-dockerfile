@@ -1,6 +1,6 @@
 # What is Mediawiki?
 
-![MediaWiki](https://raw.githubusercontent.com/simplyintricate/mediawiki-dockerfile/master/logo.png)
+![MediaWiki](https://raw.githubusercontent.com/stephenliang/mediawiki-dockerfile/master/logo.png)
 
 MediaWiki is a free and open-source wiki application, used to power wiki websites such as Wikipedia, Wiktionary and Wikimedia Commons; it was developed by the Wikimedia Foundation and others. It also runs thousands of other websites.
 
