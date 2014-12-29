@@ -18,4 +18,4 @@ RUN rm -rf /usr/share/nginx/html/images
 ADD start.sh /bin/start.sh
 
 CMD /bin/start.sh
-VOLUME ["/usr/share/nginx/html/LocalSettings.php", "/usr/share/nginx/html/images"]
+VOLUME ["/usr/share/nginx/html/images"]
