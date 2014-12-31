@@ -37,3 +37,9 @@ To help maintain immutability of the container, you may extend this image to inc
 	FROM simplyintricate/mediawiki
 
 	ADD LocalSettings.php /usr/share/nginx/html/LocalSettings.php
+
+## Contributing
+
+You can help make this Dockerfile better by contributing at [Github](https://github.com/stephenliang/mediawiki-dockerfile)
+
+If you found this Docker image helpful, send a tip via Bitcoin to 14b9y1Qw17coEkJFaAAvuXpKZLadTeBPw7
