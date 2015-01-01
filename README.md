@@ -20,7 +20,7 @@ MediaWiki is configured by LocalSettings.php. If you already have one, you can s
 
 To start MediaWiki installer
 
-	sudo docker run --link mysql:db -p 80:80 -p 443:443 -d mediawiki
+	sudo docker run --link mysql:db -p 80:80 -p 443:443 -d simplyintricate/mediawiki
 
 Then on a web browser, go to the docker host's server. For example, if you are running MediaWiki on your local computer, go to [http://localhost](http://localhost).
 
@@ -30,9 +30,9 @@ The installer will ask a series of questions, install MediaWiki to the database,
 
 Once you have LocalSettings.php, you can start MediaWiki and run it normally by mounting the LocalSettings to the container. You will also have to provide an image folder so that you can upload to your Wiki as well.
 
-	sudo docker run -v <path to LocalSettings.php>:/usr/share/nginx/html/LocalSettings.php:ro -v <path to images>:/usr/share/nginx/html/images --link mysql:db -p 80:80 -p 443:443 -d mediawiki
+	sudo docker run -v <path to LocalSettings.php>:/usr/share/nginx/html/LocalSettings.php:ro -v <path to images>:/usr/share/nginx/html/images --link mysql:db -p 80:80 -p 443:443 -d simplyintricate/mediawiki
 
-To help maintain immutability of the container, you may extend this image to include your LocalSettings.php into your own versio of MediaWiki. Here is a sample Dockerfile for that
+To help maintain immutability of the container, you may extend this image to include your LocalSettings.php into your own version of MediaWiki. Here is a sample Dockerfile for that
 
 	FROM simplyintricate/mediawiki
 
