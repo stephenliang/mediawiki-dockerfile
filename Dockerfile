@@ -2,8 +2,8 @@ FROM simplyintricate/nginx-php
 MAINTAINER Stephen Liang "docker-maint@stephenliang.pw"
 
 # Download and install Mediawiki
-ENV MEDIAWIKI_MAJOR 1.27
-ENV MEDIAWIKI_MINOR 1
+ENV MEDIAWIKI_MAJOR 1.28
+ENV MEDIAWIKI_MINOR 0
 
 ADD http://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR}/mediawiki-${MEDIAWIKI_MAJOR}.${MEDIAWIKI_MINOR}.tar.gz /mediawiki.tar.gz
 
